@@ -1,0 +1,55 @@
+html {
+    font-family: 'Lobster', cursive;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(244, 189, 213);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#outer-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    padding: 0;
+}
+
+#title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#result {
+    text-align: center;
+    margin: 5px 0;
+}
+
+#scoreDisplay {
+    color: rgb(235, 39, 39);
+}
+
+#container {
+    width: 60%;
+    min-width: 320px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.defaultCard {
+    width: 100px;
+    height: 100px;
+    /* box-shadow: 0 3px 5px 0 #DBEDF3; */
+}

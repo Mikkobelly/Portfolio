@@ -1,0 +1,243 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: ivory;
+    color: rgb(38, 60, 71);
+    font-family: 'Courier Prime', monospace;
+    letter-spacing: 4px;
+    line-height: 3;
+}
+
+h1 {
+    visibility: hidden;
+}
+
+/*--- Margin and Padding ---*/
+#about,
+#project,
+#contact {
+    padding: 130px 0;
+}
+
+/*----Font----*/
+.large-letter {
+    font-family: 'Yeseva One', cursive;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.medium-letter {
+    font-family: 'Yeseva One', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+/*--- Navbar ---*/
+/* .navbar-title {
+    line-height: 0.9;
+}
+
+.navbar-title:hover {
+    color: azure;
+} */
+
+.img-fluid {
+    background: linear-gradient(rgba(120, 155, 177, 0.423), rgba(83, 144, 181, 0.678));
+    z-index: -1;
+}
+
+.navbar-item a {
+    font-family: 'Montserrat', sans-serif;
+    color: azure;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: color 0.2s ease-in;
+    padding: 0 0 10px;
+    margin: 0 30px;
+}
+
+.navbar-item a:hover {
+    color: rgb(38, 60, 71);
+    border-bottom: 3px solid rgba(254, 251, 155, 0.656);
+}
+
+/*--- About Section ---*/
+.skill-section {
+    margin: 100px 50px 50px;
+}
+
+.skill-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.skill-title {
+    display: inline-block;
+    margin: 0 100px;
+    border-bottom: 4px solid rgba(254, 251, 155, 0.656);
+}
+
+
+/*--- Project Section ---*/
+#project {
+    background-image: linear-gradient(rgba(120, 155, 177, 0.423), rgba(83, 144, 181, 0.678)),
+        url("images/background2.png");
+    background-size: cover;
+}
+
+.app-img {
+    width: 500px;
+    height: 350px;
+    margin: 30px auto 250px;
+}
+
+.app-title,
+.description {
+    color: rgb(38, 60, 71);
+}
+
+.app-title {
+    margin: 30px;
+}
+
+.see-app,
+.see-app:hover {
+    font-size: small;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: rgb(38, 60, 71);
+}
+
+.see-app:hover {
+    color: rgb(83, 111, 125);
+    border-bottom: 4px solid rgba(254, 251, 155, 0.656);
+}
+
+
+/*---- Contact Section ---*/
+.contacts-container {
+    margin: 70px 0;
+}
+
+.email {
+    color: rgb(38, 60, 71);
+}
+
+.email:hover {
+    color: rgb(101, 124, 136);
+}
+
+.footer-container {
+    background: linear-gradient(rgba(82, 119, 142, 0.423), rgba(39, 82, 109, 0.883));
+    height: 250px;
+}
+
+.icons-container {
+    padding: 40px 0;
+}
+
+.media-icon {
+    color: white;
+    font-size: 50px;
+    transition: all 0.2s ease-in-out;
+}
+
+.media-icon:hover {
+    color: rgb(86, 101, 105);
+}
+
+.footer {
+    color: rgba(255, 255, 255, 0.514);
+}
+
+@Media (max-width: 1050px) {
+    .skill-title {
+        margin: 0 50px;
+    }
+}
+
+@Media (max-width: 630px) {
+    .large-letter {
+        font-size: 2.5rem;
+    }
+
+    .medium-letter {
+        font-size: 1.2rem;
+    }
+
+    .navbar-item {
+        padding: 0;
+    }
+
+    .navbar-item a {
+        margin: 0 30px;
+    }
+
+    .app-img {
+        width: 350px;
+        height: 245px;
+        margin: 0 auto 220px;
+    }
+
+    .app-title {
+        font-size: 1rem;
+    }
+
+    .description {
+        font-size: small;
+        line-height: 1.5;
+    }
+
+    .footer-container {
+        height: 220px;
+    }
+
+    .icons-container {
+        padding: 40px 0 0;
+    }
+
+    .media-icon {
+        font-size: 20px;
+
+    }
+
+    .footer {
+        font-size: small;
+    }
+}
+
+@Media (max-width: 400px) {
+
+    #about,
+    #project,
+    #contact {
+        padding: 75px 0;
+    }
+
+    .navbar-item {
+        height: 30px;
+    }
+
+    .app-title {
+        margin: 18px;
+    }
+
+    .app-img {
+        width: 230px;
+        height: 200px;
+    }
+
+    .contacts-container {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .footer-container {
+        height: 190px;
+    }
+}
