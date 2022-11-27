@@ -36,14 +36,6 @@ h1 {
 
 
 /*--- Navbar ---*/
-/* .navbar-title {
-    line-height: 0.9;
-}
-
-.navbar-title:hover {
-    color: azure;
-} */
-
 .img-fluid {
     background: linear-gradient(rgba(120, 155, 177, 0.423), rgba(83, 144, 181, 0.678));
     z-index: -1;
@@ -69,6 +61,10 @@ h1 {
     margin: 100px 50px 50px;
 }
 
+.skill-section div {
+    margin-bottom: 50px;
+}
+
 .skill-container {
     display: flex;
     justify-content: center;
@@ -77,8 +73,8 @@ h1 {
 
 .skill-title {
     display: inline-block;
-    margin: 0 100px;
     border-bottom: 4px solid rgba(254, 251, 155, 0.656);
+    margin: 0 100px 30px;
 }
 
 
@@ -89,10 +85,11 @@ h1 {
     background-size: cover;
 }
 
+
 .app-img {
     width: 500px;
     height: 350px;
-    margin: 30px auto 250px;
+    margin: 30px auto 320px;
 }
 
 .app-title,
@@ -100,8 +97,14 @@ h1 {
     color: rgb(38, 60, 71);
 }
 
+.description {
+    line-height: 1.5;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
 .app-title {
-    margin: 30px;
+    margin: 0 0 30px;
 }
 
 .see-app,
@@ -155,13 +158,15 @@ h1 {
     color: rgba(255, 255, 255, 0.514);
 }
 
+
+
 @Media (max-width: 1050px) {
     .skill-title {
         margin: 0 50px;
     }
 }
 
-@Media (max-width: 630px) {
+@Media (max-width: 670px) {
     .large-letter {
         font-size: 2.5rem;
     }
@@ -174,14 +179,17 @@ h1 {
         padding: 0;
     }
 
-    .navbar-item a {
-        margin: 0 30px;
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        align-items: flex-start;
+        margin: 100px 0;
     }
 
     .app-img {
         width: 350px;
         height: 245px;
-        margin: 0 auto 220px;
+        margin: 0 auto 280px;
     }
 
     .app-title {
@@ -211,7 +219,7 @@ h1 {
     }
 }
 
-@Media (max-width: 400px) {
+@Media (max-width: 450px) {
 
     body {
         font-size: 14px;
@@ -229,6 +237,10 @@ h1 {
         height: 30px;
     }
 
+    .skill-title {
+        margin: 0 50px 35px;
+    }
+
     .app-title {
         margin: 18px;
     }
@@ -236,6 +248,10 @@ h1 {
     .app-img {
         width: 230px;
         height: 200px;
+    }
+
+    .description {
+        font-size: 0.8rem;
     }
 
     .contacts-container {
