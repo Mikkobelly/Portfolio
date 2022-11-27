@@ -100,7 +100,7 @@ h1 {
 .description {
     line-height: 1.5;
     max-width: 500px;
-    margin: 0 auto;
+    margin: 0 auto 10px;
 }
 
 .app-title {
@@ -248,6 +248,7 @@ h1 {
     .app-img {
         width: 230px;
         height: 200px;
+        margin: 0 auto 300px;
     }
 
     .description {
