@@ -57,6 +57,10 @@ h1 {
 }
 
 /*--- About Section ---*/
+.biography {
+    margin: 60px;
+}
+
 .skill-section {
     margin: 100px 50px 50px;
 }
@@ -222,9 +226,9 @@ h1 {
 @Media (max-width: 450px) {
 
     body {
-        font-size: 14px;
+        font-size: 0.8rem;
         line-height: 2.3;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
     }
 
     #about,
@@ -235,6 +239,10 @@ h1 {
 
     .navbar-item {
         height: 30px;
+    }
+
+    .biography {
+        margin: 40px;
     }
 
     .skill-title {
@@ -256,7 +264,6 @@ h1 {
     }
 
     .contacts-container {
-        font-size: 14px;
         letter-spacing: 1px;
     }
 
